@@ -3,7 +3,7 @@ import json
 import datetime
 
 ScriptName = "cotd"
-Website = "https://github.com/MilkySalamander/Commands"
+Website = "https://github.com/MilkySalamander/Commands/tree/main/Streamlabs%20Chatbot/cotd"
 Description = "Command to display customizable information about Trackmania's Track of the Day and Cup of the Day"
 Creator = "MilkySalamander"
 Version = "1.0.0"
