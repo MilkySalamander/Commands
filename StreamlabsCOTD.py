@@ -1,0 +1,2 @@
+ScriptName = "cotd"
+Website = ""
