@@ -45,6 +45,6 @@ stage | Qualification | The current stage of the cotd (will either return 'Quali
    Next, navigate to the scripts section of streamlabs chatbot and import your new cotd.zip folder by clicking the 'Import' button in the top right. Once you refresh the scripts (click the reload scripts button in the top right), don't forget to check the box on the far right to enable the cotd script, and you should be set!
 
 
-If you have any questions at all feel free to email me at MilkySalamander@gmail.com or message me on discord at MilkySalamander#6627
+If you have any questions or problems at all feel free to email me at MilkySalamander@gmail.com or message me on discord at MilkySalamander#6627
 
 Enjoy!
