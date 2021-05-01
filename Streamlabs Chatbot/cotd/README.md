@@ -38,7 +38,7 @@ track['AwardCount'] | 40  | The number of awards the track has recieved in tmx
 track['TmxLink']  | https://trackmania.exchange/maps/26727  | The tmx link to the track of the day
 track['AuthorTime'] | 44.981  | The author time of the track of the day
 countdown | 1 hour 5 minutes 58 seconds | How much time remains before the start of the next cotd
-stage | qualification | The current stage of the cotd (will either return 'qualification' or 'knockout')
+stage | Qualification | The current stage of the cotd (will either return 'Qualification' or 'Knockout')
 
 
    One you have edited these two lines to your liking, save the new cotd_StreamlabsSystem.py file and zip it into a folder titled "cotd.zip".
