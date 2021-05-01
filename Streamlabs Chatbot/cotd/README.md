@@ -16,7 +16,7 @@ Once this is done, you have 2 options:
    If you choose this option, save the file and open it with your text editor of choice (notepad works as well). Once opened, scroll to the very bottom of the file, and look for the area surrounded by equals signs (=). This will be the area you can edit. 
    One of the lines will say "# What to display if cotd is in progress", and the line directly beneath it is the contents of the message. Same follows for the line that says "# What to display if cotd is NOT in progress"
 
-   In order to not break the program, you should surround all of the pure text (messages, punctuation, etc.) in quotation marks (""). When you want to add a variable, end the text you have typed so dar with a quotation mark, add a plus sign (+), and then add the variable name you would like to add in that spot. Then add another plus sign (+) and you can continue typing text by opening another quotation mark. 
+   In order to not break the program, you should surround all of the pure text (messages, punctuation, etc.) in quotation marks (""). When you want to add a variable, end the text you have typed so far with a quotation mark, add a plus sign (+), and then add the variable name you would like to add in that spot. Then add another plus sign (+) and you can continue typing text by opening another quotation mark. 
 
    Generally, the line should look something like this:  
 ```python
