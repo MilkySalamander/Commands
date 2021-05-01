@@ -1,4 +1,4 @@
-# Installation and Customization
+# Installation and Customization Instructions
 
 ### Installing and Configuring Python 2.7
 Hello!
