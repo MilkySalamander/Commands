@@ -7,6 +7,7 @@ Website = "https://github.com/MilkySalamander/Commands/tree/main/Streamlabs%20Ch
 Description = "Command to display customizable information about Trackmania's Track of the Day and Cup of the Day"
 Creator = "MilkySalamander"
 Version = "1.0.0"
+Command= "!cotd"
 
 def Init():
     return
@@ -81,7 +82,7 @@ def TrackInfo():
 def Execute(data):
 
     # aborts the command if the user types something that isn't '!cotd' 
-    if data.GetParam(0) != '!cotd':
+    if data.GetParam(0) != Command or Parent.IsOnCooldown(ScriptName, Command):
         return
     
     # get the current CET time as of the command being called
@@ -106,5 +107,9 @@ def Execute(data):
         message = "The current TOTD is '" + track['TrackName'] + "' by " + track['AuthorName'] + " with an author time of " + track['AuthorTime'] + ". The next COTD starts in " + countdown
     # ======================================================================================================
 
+    # send final message in chat
     Parent.SendStreamMessage(message)
+    
+    # create a command cooldown for 10 seconds (this can be changed)
+    Parent.AddCooldown(ScriptName,Command,10)
     return
