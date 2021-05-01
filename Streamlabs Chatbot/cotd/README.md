@@ -1,8 +1,9 @@
 # Installation and Customization Instructions
 
-### Installing and Configuring Python 2.7
 Hello!
 This command was designed to generate a customizable message for Trackmania's Cup of the Day, with information about track author, name, author time, and much more. 
+
+### Installing and Configuring Python 2.7
 If you don't have python 2.7 installed on your computer, or have never used a custom script with Streamlabs Chatbot, I recommend following [this link](https://streamlabs.com/content-hub/post/chatbot-scripts-desktop) for instructions on how to install and configure python 2.7 for Streamlabs. 
 
 
