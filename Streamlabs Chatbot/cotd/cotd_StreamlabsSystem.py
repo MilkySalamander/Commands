@@ -90,7 +90,7 @@ def Execute(data):
     # initialize variables
     countdown = TimeUntilCOTD(currentTime)
     track = TrackInfo()
-    stage = ['qualification','knockout'][currentTime.minute>15]
+    stage = ['Qualification','Knockout'][currentTime.minute>15]
 
 
     # COMMAND MESSAGE RESPONSES BEGIN HERE
