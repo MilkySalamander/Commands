@@ -23,7 +23,6 @@ Once this is done, you have 2 options:
 message = "some text you would like to see in the command" + variableName + "more text" + maybeAnotherVariable + "you get the idea"
 ```
 
-
    A list of the available variable names and their contents for your convenience:
 Variable Name | Example | Description
 --------------|---------|------------
