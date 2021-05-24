@@ -48,8 +48,9 @@ Text to Copy/Paste | Example Evaluation | Notes
 -------------------|--------------------|------
 The current TOTD is '{trackName}' by {authorName} with an author time of {authorTime}. COTD {stage} stage in progress! | The current TOTD is 'MIXTA VIA' by Erizel with an author time of 44.981. COTD Qualification stage in progress! | (during COTD), Default
 The current TOTD is '{trackName}' by {authorName} with an author time of {authorTime}. The next COTD starts in {countdown} | The current TOTD is 'MIXTA VIA' by Erizel with an author time of 44.981. The next COTD starts in 1 hour 5 minutes 58 seconds | (before COTD), Default
-The Track of the Day is {trackName} by {authorName}. Times: 🔰 {authorTime} 🥇 {goldTime} 🥈 {silverTime} 🥉 {bronzeTime}. Don't miss the next COTD in {countdown}! | The Track of the Day is MIXTA VIA by Erizel. Times: 🔰 44.981 🥇 48.000 🥈 54.000 🥉 1:08.000. Don't miss the next COTD in 1 hour 5 minutes 58 seconds! | (before COTD)
 The Track of the Day is {trackName} by {authorName}. Times: 🔰 {authorTime} 🥇 {goldTime} 🥈 {silverTime} 🥉 {bronzeTime}. We are in the {stage} stage! | The Track of the Day is MIXTA VIA by Erizel. Times: 🔰 44.981 🥇 48.000 🥈 54.000 🥉 1:08.000. We are in the Qualification stage! | (during COTD)
+The Track of the Day is {trackName} by {authorName}. Times: 🔰 {authorTime} 🥇 {goldTime} 🥈 {silverTime} 🥉 {bronzeTime}. Don't miss the next COTD in {countdown}! | The Track of the Day is MIXTA VIA by Erizel. Times: 🔰 44.981 🥇 48.000 🥈 54.000 🥉 1:08.000. Don't miss the next COTD in 1 hour 5 minutes 58 seconds! | (before COTD)
+
 
 **If you make any changes to the default options, make sure to click on "Save Settings" to ensure that your changes are reflected in the command.**
 
