@@ -34,18 +34,18 @@ A list of variables as well as their contents are provided below, as well as som
 A list of the available variable names and their contents for your convenience:
 Variable Name | Example | Description
 --------------|---------|------------
-trackName | MIXTA VIA | The name of the track of the day
-authorName | Erizel  | The name of the author of the track
-trackTMXLink | https://trackmania.exchange/maps/26727  | The tmx link to the track of the day (returns "Track not found on TMX" if no link can be found)
-authorTime | 44.981 | The author time of the track of the day
-goldTime | 48.000 | The gold medal time of the track of the day
-silverTime | 54.000 | The silver medal time of the track of the day
-bronzeTime | 1:08.000 | The bronze medal time of the track of the day
-countdown | 1 hour 5 minutes 58 seconds | How much time remains before the start of the next cotd
-stage | Qualification | The current stage of the cotd (will either return 'Qualification' or 'Knockout')
+{trackName} | MIXTA VIA | The name of the track of the day
+{authorName} | Erizel  | The name of the author of the track
+{trackTMXLink} | https://trackmania.exchange/maps/26727  | The tmx link to the track of the day (returns "Track not found on TMX" if no link can be found)
+{authorTime} | 44.981 | The author time of the track of the day
+{goldTime} | 48.000 | The gold medal time of the track of the day
+{silverTime} | 54.000 | The silver medal time of the track of the day
+{bronzeTime} | 1:08.000 | The bronze medal time of the track of the day
+{countdown} | 1 hour 5 minutes 58 seconds | How much time remains before the start of the next cotd
+{stage} | Qualification | The current stage of the cotd (will either return 'Qualification' or 'Knockout')
 
 ### Premade Examples
-Here are some premade examples of what to put in the Displayes Message boxes if you desire a different output, or if you are looking for inspiration:
+Here are some premade examples of what to put in the Displayed Message boxes if you desire a different output, or if you are looking for inspiration:
 Text to Copy/Paste | Example Evaluation | Notes
 -------------------|--------------------|------
 The current TOTD is '{trackName}' by {authorName} with an author time of {authorTime}. COTD {stage} stage in progress! | The current TOTD is 'MIXTA VIA' by Erizel with an author time of 44.981. COTD Qualification stage in progress! | (during COTD), Default
@@ -57,4 +57,4 @@ The Track of the Day is {trackName} by {authorName}. Times: ðŸ”° {authorTime} ðŸ
 
 If you have any questions or problems at all feel free to email me at MilkySalamander@gmail.com or message me on discord at MilkySalamander#6627
 
-Enjoy!
+gl hf!
