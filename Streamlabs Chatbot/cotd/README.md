@@ -4,45 +4,55 @@ Hello!
 This command was designed to generate a customizable message for Trackmania's Cup of the Day, with information about track author, name, author time, and much more. 
 
 ## Installing and Configuring Python 2.7
-If you don't have python 2.7 installed on your computer, or have never used a custom script with Streamlabs Chatbot, I recommend following [this link](https://streamlabs.com/content-hub/post/chatbot-scripts-desktop) for instructions on how to install and configure python 2.7 for Streamlabs. 
+If you don't have python 2.7 installed on your computer, or have never used a custom script with Streamlabs Chatbot, I recommend following the instructions on [this link](https://streamlabs.com/content-hub/post/chatbot-scripts-desktop) for details on how to install and configure python 2.7 for Streamlabs. 
 
 
-Once this is done, you have 2 options: 
+Once this is done, follow the steps below to add the command to your streamlabs chatbot: 
 
-## Basic Command
-1. You can [download the cotd.zip file](https://github.com/MilkySalamander/Commands/raw/main/Streamlabs%20Chatbot/cotd/cotd.zip), and simply use the 'Import' feature in the streamlabs chatbot scripts tab to install the default commmand.
- 
-   If you download the cotd.zip file, you should be all set after importing the file into the streamlabs scripts tab. Once you refresh (click the reload scripts button in the top right), don't forget to check the box on the far right to enable the cotd script, and you should be set!
+## Installing the Script
+1. [Download the cotd.zip file](https://github.com/MilkySalamander/Commands/raw/main/Streamlabs%20Chatbot/cotd/cotd.zip) 
+2. Go to the 'Scripts' tab in streamlabs chatbot and click the 'Import' button in the top right.
+3. Navigate to the .zip file downloaded earlier and select it
+5. Click the 'Reload Scripts' button in the top right, and check the box on the far right to enable the cotd script
 
-## Customizable Command
-2. You can opt to customize the command, and [download the raw cotd_StreamlabsSystem.py file](https://raw.githubusercontent.com/MilkySalamander/Commands/main/Streamlabs%20Chatbot/cotd/cotd_StreamlabsSystem.py) by right-clicking and selecting "Save as".
+## Customize the Command
 
-   If you choose this option, save the file and open it with your text editor of choice (notepad works as well). Once opened, scroll to the very bottom of the file, and look for the area surrounded by equals signs (=). This will be the area you can edit. 
-   One of the lines will say "# What to display if cotd is in progress", and the line directly beneath it is the contents of the message. Same follows for the line that says "# What to display if cotd is NOT in progress"
+The command comes loaded with a default message for ease of use, but certain aspects can be customized by clicking on the command in the scripts tab.
+Here, you can specify the cooldown of the command (in seconds), and the message to display to the user before, or during the cup of the day.
 
-   In order to not break the program, you should surround all of the pure text (messages, punctuation, etc.) in quotation marks (""). When you want to add a variable, end the text you have typed so far with a quotation mark, add a plus sign (+), and then add the variable name you would like to add in that spot. Then add another plus sign (+) and you can continue typing text by opening another quotation mark. 
+You will see the default messages in both the 'Displayed Message (during COTD)' and 'Displayed Message (before COTD)' boxes, and they are formatted like this:
 
-   Generally, the line should look something like this:  
-```python
-message = "some text you would like to see in the command" + variableName + "more text" + maybeAnotherVariable + "you get the idea"
+```
+Some text to display literally {variableName} some more text to display {anotherVariable}
 ```
 
-## Variable Names and Contents
-   A list of the available variable names and their contents for your convenience:
+To create your own custom message, you can type any text you would like to appear in the message, but any variables (information that changes with each COTD) must be surrounded in curly brackets: {}
+
+A list of variables as well as their contents are provided below, as well as some pre-made examples that are different from the default.
+
+### Variable Names and Contents
+A list of the available variable names and their contents for your convenience:
 Variable Name | Example | Description
 --------------|---------|------------
-track['TrackName']  | MIXTA VIA | The name of the track of the day
-track['AuthorName'] | Erizel  | The name of the author of the track (only displays the first name listed in tmx)
-track['Difficulty'] | Intermediate  | The listed difficulty of the track in tmx
-track['AwardCount'] | 40  | The number of awards the track has recieved in tmx
-track['TmxLink']  | https://trackmania.exchange/maps/26727  | The tmx link to the track of the day
-track['AuthorTime'] | 44.981  | The author time of the track of the day
+trackName | MIXTA VIA | The name of the track of the day
+authorName | Erizel  | The name of the author of the track
+trackTMXLink | https://trackmania.exchange/maps/26727  | The tmx link to the track of the day (returns "Track not found on TMX" if no link can be found)
+authorTime | 44.981 | The author time of the track of the day
+goldTime | 48.000 | The gold medal time of the track of the day
+silverTime | 54.000 | The silver medal time of the track of the day
+bronzeTime | 1:08.000 | The bronze medal time of the track of the day
 countdown | 1 hour 5 minutes 58 seconds | How much time remains before the start of the next cotd
 stage | Qualification | The current stage of the cotd (will either return 'Qualification' or 'Knockout')
 
+### Premade Examples
+Here are some premade examples of what to put in the Displayes Message boxes if you desire a different output, or if you are looking for inspiration:
+Text to Copy/Paste | Example Evaluation | Notes
+-------------------|--------------------|------
+The current TOTD is '{trackName}' by {authorName} with an author time of {authorTime}. COTD {stage} stage in progress! | The current TOTD is 'MIXTA VIA' by Erizel with an author time of 44.981. COTD Qualification stage in progress! | (during COTD), Default
+The current TOTD is '{trackName}' by {authorName} with an author time of {authorTime}. The next COTD starts in {countdown} | The current TOTD is 'MIXTA VIA' by Erizel with an author time of 44.981. The next COTD starts in 1 hour 5 minutes 58 seconds | (before COTD), Default
+The Track of the Day is {trackName} by {authorName}. Times: 🔰 {authorTime} 🥇 {goldTime} 🥈 {silverTime} 🥉 {bronzeTime}. Don't miss the next COTD in {countdown}! | The Track of the Day is MIXTA VIA by Erizel. Times: 🔰 44.981 🥇 48.000 🥈 54.000 🥉 1:08.000. Don't miss the next COTD in 1 hour 5 minutes 58 seconds! | (before COTD)
+The Track of the Day is {trackName} by {authorName}. Times: 🔰 {authorTime} 🥇 {goldTime} 🥈 {silverTime} 🥉 {bronzeTime}. We are in the {stage} stage! | The Track of the Day is MIXTA VIA by Erizel. Times: 🔰 44.981 🥇 48.000 🥈 54.000 🥉 1:08.000. We are in the Qualification stage! | (during COTD)
 
-   One you have edited these two lines to your liking, save the new cotd_StreamlabsSystem.py file and zip it into a folder titled "cotd.zip".
-   Next, navigate to the scripts section of streamlabs chatbot and import your new cotd.zip folder by clicking the 'Import' button in the top right. Once you refresh the scripts (click the reload scripts button in the top right), don't forget to check the box on the far right to enable the cotd script, and you should be set!
 
 
 If you have any questions or problems at all feel free to email me at MilkySalamander@gmail.com or message me on discord at MilkySalamander#6627
