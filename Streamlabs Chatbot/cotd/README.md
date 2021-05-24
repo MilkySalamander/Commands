@@ -26,9 +26,7 @@ You will see the default messages in both the 'Displayed Message (during COTD)' 
 Some text to display literally {variableName} some more text to display {anotherVariable}
 ```
 
-To create your own custom message, you can type any text you would like to appear in the message, but any variables (information that changes with each COTD) must be surrounded in curly brackets: {}
-
-A list of variables as well as their contents are provided below, as well as some pre-made examples that are different from the default.
+**To create your own custom message, you can type any text you would like to appear in the message, but any variables (information that changes with each COTD) must be surrounded in curly brackets: {}**
 
 ### Variable Names and Contents
 A list of the available variable names and their contents for your convenience:
@@ -53,7 +51,7 @@ The current TOTD is '{trackName}' by {authorName} with an author time of {author
 The Track of the Day is {trackName} by {authorName}. Times: 🔰 {authorTime} 🥇 {goldTime} 🥈 {silverTime} 🥉 {bronzeTime}. Don't miss the next COTD in {countdown}! | The Track of the Day is MIXTA VIA by Erizel. Times: 🔰 44.981 🥇 48.000 🥈 54.000 🥉 1:08.000. Don't miss the next COTD in 1 hour 5 minutes 58 seconds! | (before COTD)
 The Track of the Day is {trackName} by {authorName}. Times: 🔰 {authorTime} 🥇 {goldTime} 🥈 {silverTime} 🥉 {bronzeTime}. We are in the {stage} stage! | The Track of the Day is MIXTA VIA by Erizel. Times: 🔰 44.981 🥇 48.000 🥈 54.000 🥉 1:08.000. We are in the Qualification stage! | (during COTD)
 
-
+**If you make any changes to the default options, make sure to click on "Save Settings" to ensure that your changes are reflected in the command.**
 
 If you have any questions or problems at all feel free to email me at MilkySalamander@gmail.com or message me on discord at MilkySalamander#6627
 
